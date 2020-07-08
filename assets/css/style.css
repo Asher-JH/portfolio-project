@@ -35,6 +35,22 @@ h1 {
   background: orange;
 }
 
+.t-orange {
+  color: #E44D26;
+}
+
+.t-purple {
+  color: #7952B3;
+}
+
+.t-pink {
+  color: #C76495;
+}
+
+.t-blue {
+  color: #016DB5;
+}
+
 #v-home {
   position: relative;
   height: 100vh;
@@ -107,7 +123,14 @@ nav .nav-link {
 }
 #skills i {
   font-size: 6rem;
+}
+#skills h4 {
   color: white;
+}
+#skills .row p {
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
 @media (max-width: 576px) {
