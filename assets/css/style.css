@@ -5,8 +5,8 @@
   scroll-behavior: smooth;
 }
 
-html {
-  font-family: "Arimo", sans-serif;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h1 {
@@ -113,6 +113,65 @@ nav .nav-link {
   position: relative;
 }
 
+#projects {
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 36, 47, 0.1);
+}
+#projects .nav-link {
+  background: white;
+  padding: 0.75rem 5rem;
+  transition: all 0.5s ease;
+}
+#projects .nav-link:hover {
+  transform: scale(1.1);
+}
+#projects .active {
+  background: #1b242f;
+}
+#projects .tab-pane {
+  background: none !important;
+}
+
+.project-box {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.project-box img {
+  width: 100%;
+  height: 100%;
+}
+.project-box .p-title {
+  top: -20%;
+  transition: all 0.5s ease;
+}
+.project-box .p-links {
+  bottom: -20%;
+  transition: all 0.5s ease;
+}
+.project-box .project-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.project-box .project-overlay:hover {
+  opacity: 1;
+}
+.project-box .project-overlay:hover .p-title {
+  top: 30%;
+}
+.project-box .project-overlay:hover .p-links {
+  bottom: 25%;
+}
+
 #contact {
   width: 100%;
   height: 100%;
@@ -123,12 +182,15 @@ nav .nav-link {
 }
 #contact p {
   color: grey;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
+}
+#contact .special-p:hover {
+  color: white;
 }
 #contact .contact-boxes {
   font-size: 1.25rem;
   color: lightblue;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 #contact .contact-boxes:hover {
   font-size: 1.5rem;
@@ -163,12 +225,20 @@ nav .nav-link {
 }
 #skills p {
   color: grey;
+  transition: all 0.2s ease;
+}
+#skills .special-p:hover {
+  color: white;
 }
 #skills i {
   font-size: 6rem;
 }
 #skills h4 {
   color: white;
+  transition: all 0.5s ease;
+}
+#skills .h4-special:hover {
+  transform: translatey(10px);
 }
 #skills .row p {
   color: white;
