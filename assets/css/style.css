@@ -52,6 +52,7 @@ h1 {
 }
 
 #v-home {
+  width: 100vw;
   position: relative;
   height: 100vh;
   display: flex;
@@ -145,7 +146,7 @@ nav .nav-link {
 }
 
 #projects {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: rgba(27, 36, 47, 0.1);
 }
@@ -206,7 +207,7 @@ nav .nav-link {
 }
 
 #contact {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: #2D3038;
 }
@@ -261,7 +262,7 @@ nav .nav-link {
   text-decoration: none;
   font-size: 2rem;
   color: white;
-  width: 23%;
+  width: 24%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -275,7 +276,7 @@ nav .nav-link {
 }
 
 #skills {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: #2D3038;
 }
@@ -316,17 +317,13 @@ nav .nav-link {
 }
 
 @media (max-width: 576px) {
-  html {
-    overflow-x: hidden;
-  }
-
   video {
     display: none;
   }
 }
 @media (max-width: 992px) {
   nav {
-    width: 100%;
+    width: 100vw;
     position: fixed !important;
     background: #1B242F;
     top: 0;
@@ -360,7 +357,7 @@ nav .nav-link {
   }
 
   nav {
-    width: 100%;
+    width: 100vw;
   }
   nav .container {
     padding: 1rem;
