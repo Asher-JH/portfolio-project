@@ -19,7 +19,7 @@ h1
 ::-webkit-scrollbar-thumb
 	background: #888
 
-::-webkit-scrollbar-thumb:hover
+::-webkit-scrollbar-thumb:hover 
 	background: #555
 
 .divider
@@ -55,6 +55,7 @@ h1
 
 @media (max-width: 992px)
 	nav
+		position: fixed!important
 		background: #1B242F
 		top: 0
 		border-bottom: 1px solid grey
@@ -68,7 +69,19 @@ h1
 				color: darkgrey!important
 				margin-left: 20px
 
+
 @media (min-width: 992px)
+	
+	.v-content
+		h1
+			color: orange
+			font-size: 5.5rem!important
+			text-shadow: 2px 1px darkorange
+			cursor: none
+			.l-u
+				transition: all .3s ease
+				&:hover
+					transform: translateY(-20px)
 	nav
 		.container
 			padding: 1rem

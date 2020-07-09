@@ -96,11 +96,23 @@ h1 {
   z-index: 10;
 }
 #v-home .v-content h1 {
-  color: white;
-  font-size: 3.5rem;
+  color: orange;
+  font-size: 2.5rem;
+}
+#v-home .btn {
+  background: rgba(255, 255, 255, 0.3);
+  color: black;
+  padding: 0.5rem 4.25rem;
+  font-size: 1.1rem;
+  transition: all 0.5s ease;
+}
+#v-home .btn:hover {
+  transform: translateY(10px);
+  background: orange;
 }
 
 nav {
+  position: absolute !important;
   z-index: 99;
   top: 5%;
   left: 0;
@@ -113,6 +125,24 @@ nav .nav-link {
   position: relative;
 }
 
+#about a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #0054A7;
+  transition: all 0.5s ease;
+}
+#about img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 3;
+  transition: all 0.5s ease;
+}
+#about img:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.8);
+}
+
 #projects {
   width: 100%;
   height: 100%;
@@ -122,12 +152,14 @@ nav .nav-link {
   background: white;
   padding: 0.75rem 5rem;
   transition: all 0.5s ease;
+  color: black;
 }
 #projects .nav-link:hover {
   transform: scale(1.1);
 }
 #projects .active {
   background: #1b242f;
+  color: white;
 }
 #projects .tab-pane {
   background: none !important;
@@ -218,6 +250,29 @@ nav .nav-link {
   background: #0073B1;
 }
 
+#socials {
+  width: 100%;
+  height: 100%;
+  background: #2D3038;
+}
+#socials a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  width: 23%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s ease;
+}
+#socials a:hover {
+  color: black;
+  background: orange;
+  transform: translateY(-20px);
+}
+
 #skills {
   width: 100%;
   height: 100%;
@@ -266,6 +321,7 @@ nav .nav-link {
 }
 @media (max-width: 992px) {
   nav {
+    position: fixed !important;
     background: #1B242F;
     top: 0;
     border-bottom: 1px solid grey;
@@ -284,6 +340,19 @@ nav .nav-link {
   }
 }
 @media (min-width: 992px) {
+  .v-content h1 {
+    color: orange;
+    font-size: 5.5rem !important;
+    text-shadow: 2px 1px darkorange;
+    cursor: none;
+  }
+  .v-content h1 .l-u {
+    transition: all 0.3s ease;
+  }
+  .v-content h1 .l-u:hover {
+    transform: translateY(-20px);
+  }
+
   nav .container {
     padding: 1rem;
   }
