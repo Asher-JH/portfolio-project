@@ -112,6 +112,7 @@ h1 {
 }
 
 nav {
+  width: 100vw;
   position: absolute !important;
   z-index: 99;
   top: 5%;
@@ -150,7 +151,7 @@ nav .nav-link {
 }
 #projects .nav-link {
   background: white;
-  padding: 0.75rem 5rem;
+  padding: 0.25rem 4rem;
   transition: all 0.5s ease;
   color: black;
 }
@@ -321,6 +322,7 @@ nav .nav-link {
 }
 @media (max-width: 992px) {
   nav {
+    width: 100%;
     position: fixed !important;
     background: #1B242F;
     top: 0;
@@ -353,6 +355,9 @@ nav .nav-link {
     transform: translateY(-20px);
   }
 
+  nav {
+    width: 100%;
+  }
   nav .container {
     padding: 1rem;
   }
