@@ -316,6 +316,10 @@ nav .nav-link {
 }
 
 @media (max-width: 576px) {
+  html {
+    overflow-x: hidden;
+  }
+
   video {
     display: none;
   }
